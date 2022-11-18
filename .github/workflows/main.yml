@@ -37,5 +37,5 @@ jobs:
       #instalando as dependencias 
       - run: |
           npm i 
-          npm build
+          npm run build
           
