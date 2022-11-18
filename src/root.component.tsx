@@ -1,3 +1,12 @@
+import { Header } from "./components/Header";
+import { GlobalStyle } from "./styles/global";
+
 export default function Root(props) {
-  return <section>{props.name} is mounted!</section>;
+  return (
+    <>
+      <Header />
+
+      <GlobalStyle></GlobalStyle>
+    </>
+  );
 }
