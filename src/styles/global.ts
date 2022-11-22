@@ -1,6 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle` :root {
+    --white: #FFFFFF;
+
     --background: #F0F2F5;
     --red: #E52E4D;
     --green: #33CC35;
@@ -9,6 +11,8 @@ export const GlobalStyle = createGlobalStyle` :root {
     --text-title: #363F5F;
     --text-body: #969CB3;
     --shape: #FFFFFF;
+    --gray-800: #29292e;    
+    --gray-900: #121214;
 }
 
 * {
@@ -28,7 +32,8 @@ html {
 }
 
 body {
-    background: var(--background);
+    background: var(--gray-900);
+    color: var(--white);
     -webkit-font-smoothing: antialiased
 }
 

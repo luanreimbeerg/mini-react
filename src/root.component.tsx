@@ -1,11 +1,10 @@
-import { Header } from "./components/Header";
+import Routes from "./routes";
 import { GlobalStyle } from "./styles/global";
 
 export default function Root(props) {
   return (
     <>
-      <Header />
-
+      <Routes></Routes>
       <GlobalStyle></GlobalStyle>
     </>
   );
