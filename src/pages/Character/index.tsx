@@ -9,11 +9,14 @@ import { Container } from "./styles";
 export default function Character() {
   const [characters, setCharacters] = useState<Result[]>([]);
 
-  useEffect(() => {
+  function searchCharacters() {
     api.get<characterList>(`/character`).then((response) => {
       setCharacters(response.data.results);
-      console.log(response.data);
     });
+  }
+
+  useEffect(() => {
+    searchCharacters();
   }, []);
 
   return (
