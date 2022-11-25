@@ -16,8 +16,13 @@ export const Content = styled.div`
   }
 
   nav {
-    margin-inline-start: 5rem;
-    height: 5rem;
+    display: flex;
+    gap: 0.75rem;
+
+    .nav-pag {
+      display: flex;
+      align-items: center;
+    }
 
     a {
       display: inline-block;
