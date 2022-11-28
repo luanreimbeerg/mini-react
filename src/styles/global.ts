@@ -41,8 +41,8 @@ body,
 input,
 textarea,
 button {
-    font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    font: 400 1rem "Roboto", sans-serif
 }
 
 h1,
