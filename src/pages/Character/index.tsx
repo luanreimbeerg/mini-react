@@ -26,6 +26,7 @@ export default function Character() {
         {characters.map((charac) => (
           <CardCharacter
             key={charac.id}
+            id={charac.id}
             name={charac.name}
             image={charac.image}
           />

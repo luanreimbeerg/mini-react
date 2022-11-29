@@ -25,3 +25,16 @@ export const DialogContainer = styled(Dialog)(({ theme }) => ({
     "min-width": theme.spacing(43),
   },
 }));
+
+export const Content = style.div`
+  display: flex;
+  gap: 0.75rem;
+
+  label {
+    font-weight: 900;
+  }
+
+  li {
+    list-style: none;
+  }
+`;
